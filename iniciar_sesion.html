@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Inicio de sesion</title> 
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
+        <link href="css/estilos.css" type="text/css" rel="stylesheet"> 
+        <link rel="icon" href="img/PageLogo/favicon.png">
+        <script src="js/scripts.js"></script>
+      
+    </head>
+    <body>
+      <nav class="navbar sticky-top navbar-expand-lg navbar-dark rounded border-bottom border-primary">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#opciones">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <!-- logo -->
+        <a class="navbar-brand" href="index.html">
+          <img src="img/PageLogo/Main page icon.png" width="85" height="85" alt="Volver a inicio">
+        </a>
+    
+        <!-- enlaces -->
+        <div class="collapse navbar-collapse" id="opciones">   
+          <div class="navbar-header">
+            <a class="navbar-brand" href="index.html" style="font-size: 40px; letter-spacing: 10px;">DOWNWARE</a>
+          </div>
+          <ul class="navbar-nav" style="letter-spacing: 2px;">
+            <li class="nav-item">
+              <a class="nav-link"; href="index.html">Inicio | </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="software.html">Programas | </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="videojuegos.html">Videojuegos | </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="nosotros.html">¿Quienes somos? |</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="crear_cuenta.html" style="font-size: 18px;">Crear cuenta || </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="iniciar_sesion.html" style="font-size: 18px; ">Iniciar sesión || </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="donaciones.html" style="font-size: 18px; ">Donaciones || </a>
+            </li>
+
+          </ul>
+        </div>
+      </nav>
+      <br><br>
+    
+      <!--CONTENIDO-->
+      <div class="container rounded container-xl boxed" style="background-color:rgb(15, 4, 0)">
+        <div class="titulo boxed-sm"> 
+          <h1 style="font-size: 35px; margin: 20px; text-align: center;">Iniciar Sesión</h1>
+        </div>
+
+        <br> <br> <br>
+
+        <form action="index.html" method="POST" name="datos" style="text-align: center; padding: 5%; padding-right: 5%; color: aliceblue;">
+          
+
+          <label for="lab_usuario" style="padding: 1%;"> Usuario: </label> <br>
+            <input type="text" name="us" id="user" placeholder="Ingrese su Usuario" value="" required autofocus onchange="textMinus(this)"><br><br>
+          
+          <label for="lab_correo" style="padding: 1%;"> Email: </label> <br>
+            <input type="email" name="em" id="email" placeholder="Ingrese su correo" value="" required autofocus><br><br>
+
+          <label for="lab_password" style="padding: 1%;"> Contraseña: </label> <br>
+            <input type="password" name="pass" id="pass_user" placeholder="Ingrese su contraseña" value="" required> <br><br>
+
+          <label for="lab_reco_usuario" style="padding: 1%;"> Recordar usuario </label>
+            <input type="checkbox" name="che_us" id="check_user" value=""> <br>
+
+          <label for="lab_correo" style="padding: 1%;"> Recordar correo </label>
+            <input type="checkbox" name="che_cor" id="check_correo" value=""> <br>
+
+          <label for="lab_sesion" style="padding: 1%;"> Mantener sesión iniciada </label>
+            <input type="checkbox" name="che_ses" id="check_sesion" value="" onmousedown="checkSesion(this)"> <br>
+
+          <br>
+
+          <input type="submit" value="Iniciar Sesión" onclick="return validacion()" onmouseover="style.background = 'purple'" onmouseout="style.background= 'white'"
+            style="width: 50%;  height: 40px;">
+
+          <br><br><br>
+
+        </form>
+      </div>
+      <!--CONTENIDO-->
+    
+
+      <footer>
+
+        <div class="container-footer-all">
+    
+          <div class="container-body">
+    
+              <div class="columna1">
+    
+                  <h1 style="color: rgb(143, 96, 182); font-size: 3vw;">Más información de la página</h1>
+    
+                  <p style="color: rgb(165, 165, 165); font-family: Helvetica; font-size: 15px;">
+                    Somos una página encargada de distribuir software de manera ilegal, otorgando todas las herramientas para que los usuarios puedan utilizarlos sin pagar ni un peso.
+                    Todo el software que encontrarás en esta página está completamente libre de virus.
+                  </p>
+    
+              </div>
+    
+              <div class="columna2">
+    
+                  <h1 style="max-height: 100%; max-width: 100%; font-size: 3vw;">Redes Sociales</h1>
+    
+                  <div class="row">
+                    <a href="#"><img src="img/social_icon/facebook_icon.png" style="width: 32px; height: 32px;"></a>
+                    <label>Siguenos en facebook</label>
+                  </div>
+                  <div class="row" >
+                    <a href="#"><img src="img/social_icon/instagram_icon.png" style="width: 32px; height: 32px;"></a>
+                    <label>Siguenos en Instagram</label>
+                  </div>
+                  <div class="row">
+                    <a href="#"><img src="img/social_icon/twitter_icon.png" style="width: 32px; height: 32px;"></a>
+                    <label>Siguenos en Twitter</label>
+                  </div>
+                  
+    
+              </div>
+    
+          </div>
+          
+          <div class="container-footer">
+    
+              <div class="copyright" style="margin-left: 40px;">
+                Javier Puebla Toledo | @Copyrigth Derechos reservados
+              </div>
+    
+          </div>
+    
+        </div>
+    
+      </footer>
+    
+      
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  
+  </body>
+</html>

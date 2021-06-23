@@ -1,0 +1,338 @@
+<!doctype html>
+<html>
+<head>
+
+  <title>Downware Inicio</title> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  {% load static %}
+  <link href="{%static 'core/css/bootstrap.min.css'%}" type="text/css" rel="stylesheet">
+  <link href="{%static 'core/css/estilos.css'%}" type="text/css" rel="stylesheet"> 
+  <link rel="icon" href="{%static 'core/img/PageLogo/favicon.png'%}">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  
+
+</head>
+<body>
+
+  <nav class="navbar sticky-top navbar-expand-lg navbar-dark rounded border-bottom border-primary">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#opciones">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <!-- logo -->
+    <a class="navbar-brand" href="index.html">
+
+      {% load static %}
+      <img src="{% static 'core/img/PageLogo/main_page_icon.png'%}" width="85" height="85" alt="Volver a inicio">  
+
+      <!--
+        
+        <img src="img/PageLogo/Main page icon.png" width="85" height="85" alt="Volver a inicio">  
+      
+      -->
+    </a>
+
+        <!-- enlaces -->
+        <div class="collapse navbar-collapse" id="opciones">   
+          <div class="navbar-header">
+            <a class="navbar-brand" href="index.html" style="font-size: 40px; letter-spacing: 10px;">DOWNWARE</a>
+          </div>
+          <ul class="navbar-nav" style="letter-spacing: 2px;">
+            <li class="nav-item">
+              <a class="nav-link"; href="index.html">Inicio | </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="software.html">Programas | </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="videojuegos.html">Videojuegos | </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="nosotros.html">¿Quienes somos? |</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="crear_cuenta.html" style="font-size: 18px;">Crear cuenta || </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="iniciar_sesion.html" style="font-size: 18px; ">Iniciar sesión || </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="donaciones.html" style="font-size: 18px; ">Donaciones || </a>
+            </li>
+
+          </ul>
+        </div>
+  </nav>
+  <br><br>
+
+  <div class="container rounded boxed" style="background-color:rgb(15, 4, 0)">
+    <div class="titulo boxed">
+      <h1 style="font-size: 30px;"> 
+        <img src="{%static 'core/img/icon_extra/destacado-icono-r.png'%}" style="width: 76px; height: 64px;"> N O V E D A D E S <img src="{%static 'core/img/icon_extra/destacado-icono-l.png'%}" style="width: 76px; height: 64px;">
+        <br>
+        <img src="{%static 'core/img/icon_extra/separation.png'%}" style="width: 900px; height: 10px; max-width: 100%;">
+      </h1>
+    </div>
+  </div>
+
+  <div class="container">
+      
+    <div id="carousel1" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carousel1" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel1" data-slide-to="1"></li>
+        <li data-target="#carousel1" data-slide-to="2"></li>
+        <li data-target="#carousel1" data-slide-to="3"></li>
+        <li data-target="#carousel1" data-slide-to="4"></li>
+      </ol>
+      <!-- diapositivas -->
+      <div class="carousel-inner">
+
+        <div class="carousel-item active">
+          <a href="deadcells.html">
+            <img class="d-block w-100 boxed-sm" src="{%static 'core/img/software/juegos/deadcells.jpg'%}" style="width:960px;height:600px;" alt="">
+            <div class="carousel-caption">
+            </div>
+          </a>
+        </div>
+
+        <div class="carousel-item">
+          <a href="hyperlight.html">
+            <img class="d-block w-100 boxed-sm" src="{%static 'core/img/software/juegos/hyperlight.jpg'%}" style="width:960px;height:600px;" alt="">
+            <div class="carousel-caption">
+            </div>
+          </a>
+        </div>
+
+        <div class="carousel-item">
+          <a href="aseprite.html">
+            <img class="d-block w-100 boxed-sm" src="{%static 'core/img/software/aseprite.jpg'%}" style="width:960px;height:600px;" alt="" >
+            <div class="carousel-caption">
+            </div>
+          </a>
+        </div>
+
+        <div class="carousel-item">
+          <a href="flstudio12.html">
+            <img class="d-block w-100 boxed-sm" src="{%static 'core/img/software/flstudio.jpg'%}" style="width:960px;height:600px;" alt="">
+            <div class="carousel-caption">
+            </div>
+          </a>
+        </div>
+
+        <div class="carousel-item">
+          <a href="vegaspro17.html">
+            <img class="d-block w-100 boxed-sm" src="{%static 'core/img/software/vegas17.jpg'%}" style="width:960px;height:600px;" alt="">
+            <div class="carousel-caption">
+            </div>
+          </a>
+        </div>
+      </div>
+      <!-- botones de desplazamiento a izquierda y derecha -->      
+      <a class="carousel-control-prev" href="#carousel1" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carousel1" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+
+
+  <div class="container-xl rounded boxed">
+
+    <br>
+    <br>
+
+    <div class="boxed-sm" style="background: linear-gradient(to bottom, rgb(12, 0, 6) 70%, rgb(65, 16, 97) 110%);">
+      <div class="titulo">
+        <h3 
+          style="font-size: 25px;">D O W N W A R E
+          <br>
+          <img src="{%static 'core/img/icon_extra/separation.png'%}" style="width: 400px; height: 10px; max-width: 100%;">
+        </h3>
+      </div>
+
+      <div>
+        <p style="text-align: center; letter-spacing: 6px; color: aliceblue; font-family: 'Courier New'; font-size: 18px;">
+          <br>
+          ¡El Programa/Juego que quieras!
+          <br>
+          <img src="{%static 'core/img/icon_extra/separation.png'%}" style="width: 900px; height: 20px; max-width: 100%;">
+          <br>
+          Totalmente Gratis
+          <br>
+          <img src="{%static 'core/img/icon_extra/separation.png'%}" style="width: 700px; height: 20px; max-width: 100%;">
+          <br>
+          Rápido
+          <br>
+          <img src="{%static 'core/img/icon_extra/separation.png'%}" style="width: 500px; height: 20px; max-width: 100%;">
+          <br>
+          Y
+          <br>
+          Seguro
+          <br>
+          <img src="{%static 'core/img/icon_extra/separation.png'%}" style="width: 300px; height: 20px; max-width: 100%;">
+          <br>
+          <img src="{%static 'core/img/icon_extra/separation.png'%}" style="width: 200px; height: 15; max-width: 100%;">
+          <br>
+          <img src="{%static 'core/img/icon_extra/separation.png'%}" style="width: 100px; height: 10px; max-width: 100%;">
+          <br>
+          <img src="{%static 'core/img/icon_extra/separation.png'%}" style="width: 50px; height: 7px; max-width: 100%;">
+          <br>
+          <img src="{%static 'core/img/icon_extra/separation.png'%}" style="width: 25px; height: 4px; max-width: 100%;">
+          <br>
+          <img src="{%static 'core/img/icon_extra/separation.png'%}" style="width: 12px; height: 2px; max-width: 100%;">
+          <br><br><br>
+        </p>
+      </div>
+    </div>
+
+    <br>
+    
+    <div class="boxed-sm" style="background: linear-gradient(to bottom, rgb(12, 0, 6) 70%, rgb(65, 16, 97) 110%);">
+      <div>
+        <p style="text-align: center; letter-spacing: 1px; color: aliceblue; font-family: 'Courier New'; font-size: 18px; margin: 50px;">
+          <br>
+          <img src="{%static 'core/img/icon_extra/separation.png'%}" style="width: 600px; height: 10px; max-width: 100%;">
+          <img src="{%static 'core/img/icon_extra/separation.png'%}" style="width: 800px; height: 10px; max-width: 100%;">
+          <br><br>
+          <img src="{%static 'core/img/icon_extra/separation.png'%}" style="width: 1000px; height: 10px; max-width: 100%;">
+          <br>
+            Te traemos los juegos y programas más nuevos del mercado, de forma gratuita, y en español si están disponibles.
+          <br>
+          <br>
+            Todos los archivos que subimos a nuestro sitio han sido analizados por los mejores antivirus modernos, por lo que puedes descargar sin el miedo de ser infectado por un virus.
+          <br>
+          <img src="{%static 'core/img/icon_extra/separation.png'%}" style="width: 1000px; height: 10px; max-width: 100%;">
+          <br><br>
+          <img src="{%static 'core/img/icon_extra/separation.png'%}" style="width: 800px; height: 10px; max-width: 100%;">
+          <img src="{%static 'core/img/icon_extra/separation.png'%}" style="width: 600px; height: 10px; max-width: 100%;">
+          <br>
+        </p>
+      </div>
+    </div>
+
+    <br>
+    
+    <div class="row">       
+      <div class="col-md">        
+          <div class="card bg-dark" style="border: 10px solid rgb(74, 35, 136);">
+              <img class="card-img-top" src="{%static 'core/img/cards/software_card.png'%}" style="max-width: 100%; max-height: 100%;"> 
+            <div class="card-img-overlay ovl">
+                <h4 class="titulo">PROGRAMAS</h4>
+                  <p class="card-text" style="text-align: center; color: rgb(255, 209, 223); font-size: 16px; font-family: 'Courier New';">Encontraras todo tipo de Software para descargar de forma gratuita
+                  </p>
+                <div class="col text-center">
+                  <a href="software.html" class="btn btn-primary btn-xl" style="background-color: black; border-color: rgb(118, 193, 255);">Entrar</a>
+                </div>
+            </div>
+          </div>          
+      </div>
+
+
+      <div class="col-md">        
+        <div class="card bg-dark" style="border: 10px solid rgb(74, 35, 136);">
+            <img class="card-img-top" src="{%static 'core/img/cards/videogame_card.png'%}" style="max-width: 100%; max-height: 100%;">
+          <div class="card-img-overlay ovl">
+              <h4 class="titulo">VIDEOJUEGOS</h4>
+                <p class="card-text" style="text-align: center; color: rgb(255, 209, 223); font-size: 16px; font-family: 'Courier New';">Todo tipo de Videojuegos para descargar y jugar
+                </p>
+              <div class="col text-center">
+                <a href="videojuegos.html" class="btn btn-primary btn-xl" style="background-color: black; border-color: rgb(118, 193, 255);">Entrar</a>
+              </div>
+          </div>
+        </div>          
+      </div>
+
+    </div>
+
+    <div class="row">
+
+      <div class="col-md">        
+        <div class="card bg-dark" style="border: 10px solid rgb(74, 35, 136);">
+            <img class="card-img-top" src="{%static 'core/img/cards/nosotros_card_sm.jpg'%}" style="max-width: 100%; max-height: 100%;">
+          <div class="card-img-overlay ovl">
+              <h4 class="titulo">¿Quienes somos?</h4>
+                <p class="card-text" style="text-align: center; color: rgb(255, 209, 223); font-size: 16px; font-family: 'Courier New';">Más información sobre el proyecto DOWNWARE
+                </p>
+              <div class="col text-center">
+                <a href="nosotros.html" class="btn btn-primary btn-xxl" style="background-color: black; border-color: rgb(118, 193, 255);">Entrar</a>
+              </div>
+          </div>
+        </div>          
+      </div>
+
+    </div>
+
+    <br>
+    <br>
+    <br>
+  </div>
+
+  <br><br>
+
+  <footer>
+
+    <div class="container-footer-all">
+
+      <div class="container-body">
+
+          <div class="columna1">
+
+              <h1 style="color: rgb(143, 96, 182); font-size: 3vw;">Más información de la página</h1>
+
+              <p style="color: rgb(165, 165, 165); font-family: Helvetica; font-size: 15px;">
+                Somos una página encargada de distribuir software de manera ilegal, otorgando todas las herramientas para que los usuarios puedan utilizarlos sin pagar ni un peso.
+                Todo el software que encontrarás en esta página está completamente libre de virus.
+              </p>
+
+          </div>
+
+          <div class="columna2">
+
+              <h1 style="max-height: 100%; max-width: 100%; font-size: 3vw;">Redes Sociales</h1>
+
+              <div class="row">
+                <a href="#"><img src="{%static 'core/img/social_icon/facebook_icon.png'%}" style="width: 32px; height: 32px;"></a>
+                <label>Siguenos en facebook</label>
+              </div>
+              <div class="row" >
+                <a href="#"><img src="{%static 'core/img/social_icon/instagram_icon.png'%}" style="width: 32px; height: 32px;"></a>
+                <label>Siguenos en Instagram</label>
+              </div>
+              <div class="row">
+                <a href="#"><img src="{%static 'core/img/social_icon/twitter_icon.png'%}" style="width: 32px; height: 32px;"></a>
+                <label>Siguenos en Twitter</label>
+              </div>
+              
+
+          </div>
+
+      </div>
+      
+      <div class="container-footer">
+
+          <div class="copyright" style="margin-left: 40px;">
+            Javier Puebla Toledo | @Copyrigth Derechos reservados
+          </div>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  
+</body>
+</html>
