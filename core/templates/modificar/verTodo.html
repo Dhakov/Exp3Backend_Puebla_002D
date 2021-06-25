@@ -27,7 +27,7 @@
         </div>
 
         <br><br><br>
-        <table border="1" style="color: aliceblue;">
+        <table border="1" style="color: rgb(0, 0, 0); background-color: rgba(255, 255, 255, 0.651);" class="boxed-sm">
 
           <thead>
           <tr>
@@ -46,12 +46,14 @@
             <td>{{soft.idSoftware}}</td>
             <td>{{soft.nomSoftware}}</td>
             <td>{{soft.descSoftware}}</td>
-            <td><a href="{%url 'mod_software' soft.idSoftware%}" class="btn btn-primary" id="Modificar" value="Modificar">
+            <td><a href="{%url 'mod_software' soft.idSoftware%}" class="btn btn-primary" id="Modificar" value="Modificar"
+              style="background-color: rgb(134, 96, 139); border-color: blueviolet; border-radius: 0px;">
               Modificar
               </a>
             </td>
 
-            <td><a href="{%url 'del_software' soft.idSoftware%}" class="btn btn-danger" id="Modificar" value="Modificar">
+            <td><a href="{%url 'del_software' soft.idSoftware%}" class="btn btn-danger" id="Modificar" value="Modificar"
+              style="background-color: rgb(153, 63, 93); border-color: rgb(255, 0, 0); border-radius: 0px;">
               Eliminar
               </a>
             </td>

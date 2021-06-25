@@ -25,14 +25,16 @@ class SoftwareForm(ModelForm):
                 attrs={
                     'class' : 'form-control',
                     'placeholder' : 'id del software',
-                    'id' : 'idsoft'
+                    'id' : 'idsoft',
+                    'style' : 'border-radius: 0px'
                 }
             ),
             'nomSoftware' : forms.TextInput(
                 attrs={
                     'class' : 'form-control',
                     'placeholder' : 'nombre del Software',
-                    'id' : 'nomSoft'
+                    'id' : 'nomSoft',
+                    'style' : 'border-radius: 0px'
                 }
             ),
             'descSoftware' : forms.Textarea(
@@ -41,13 +43,15 @@ class SoftwareForm(ModelForm):
                     'id' : 'descSoft',
                     'placeholder' : 'Ingrese una descipción del software',
                     'cols' : '95',
-                    'rows' : '10'
+                    'rows' : '10',
+                    'style' : 'border-radius: 0px'
                 }
             ),
             'catSoftware' : forms.Select(
                 attrs={
                     'class' : 'form-control',
-                    'id' : 'catSoft'
+                    'id' : 'catSoft',
+                    'style' : 'border-radius: 0px'
                 }
             )
 
