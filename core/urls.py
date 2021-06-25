@@ -1,6 +1,6 @@
 from django.urls import path
 from . import views
-from .views import form_software, index, software, formulario, videojuego
+from .views import form_software, index, software, videojuego
 
 urlpatterns = [
     path('', views.index, name="index"),

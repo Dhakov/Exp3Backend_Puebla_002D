@@ -13,11 +13,7 @@ def software(request):
 
 def videojuego(request):
     return render(request, 'juegos/videojuegos.html')
-
-def formulario(request):
-    software_form = SoftwareForm()
-    return render(request, 'core/ingresar_software.html', {'software_form':software_form})
-
+    
 def form_software(request):
     if request.method == 'POST':
         software_form = SoftwareForm(request.POST)
