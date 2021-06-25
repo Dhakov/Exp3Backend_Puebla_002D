@@ -231,11 +231,40 @@
                   <p class="card-text" style="text-align: center; color: rgb(255, 209, 223); font-size: 16px; font-family: 'Courier New';">Encontraras todo tipo de Software para descargar de forma gratuita
                   </p>
                 <div class="col text-center">
-                  <a href="software.html" class="btn btn-primary btn-xl" style="background-color: black; border-color: rgb(118, 193, 255);">Entrar</a>
+                  <a href="{%static 'software.html'%}" class="btn btn-primary btn-xl" style="background-color: black; border-color: rgb(118, 193, 255);">Entrar</a>
                 </div>
             </div>
           </div>          
       </div>
+
+
+      <br>
+      <div class="row, col-md" style="color: aliceblue;">
+
+        <table border="1">
+
+          <tr>
+
+            <td>ID</td>
+            <td>Nombre</td>
+            <td>Descripción</td>
+
+          </tr>
+
+          {%for ve in datos%}
+          <tr>
+
+            <td>{{ve.idSoftware}}</td>
+            <td>{{ve.nomSoftware}}</td>
+            <td>{{ve.descSoftware}}</td>
+
+          </tr>
+          {%endfor%}
+
+        </table>
+
+      </div>
+      <br>
 
 
       <div class="col-md">        
