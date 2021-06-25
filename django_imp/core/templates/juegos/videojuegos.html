@@ -1,0 +1,173 @@
+{% extends "mi-plantilla.html" %}
+
+{% block content %}
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Biblioteca de juegos</title> 
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        {% load static %}
+        <link href="{%static 'core/css/bootstrap.min.css'%}" type="text/css" rel="stylesheet">
+        <link href="{%static 'core/css/estilos.css'%}" type="text/css" rel="stylesheet"> 
+        <link rel="icon" href="{%static 'core/img/PageLogo/favicon.png'%}">
+      
+    </head>
+    <body>
+
+      {% load static %}
+    
+      <div class="container rounded container-xl boxed" style="background-color:rgb(15, 4, 0)">
+        <div class="titulo boxed"> 
+          <h1 style="font-size: 30px; text-align: center; margin: 20px; letter-spacing: 6px;">
+            <img src="{%static 'core/img/icon_extra/destacado-icono-r.png'%}" style="width: 76px; height: 64px;">Biblioteca de VIDEOJUEGOS<img src="{%static 'core/img/icon_extra/destacado-icono-l.png'%}" style="width: 76px; height: 64px;">
+            <br>
+            <img src="{%static 'core/img/icon_extra/separation.png'%}" style="width: 900px; height: 10px; max-width: 100%;">
+          </h1>
+        </div>
+        
+        <div class="container rounded titulo boxed-sm"> 
+          <h1 style="font-size: 30px; text-align: center; margin: 20px; letter-spacing: 6px;">
+            <img src="{%static 'core/img/icon_extra/star.png'%}" style="width: 96px; height: 32px;">DESTACADOS<img src="{%static 'core/img/icon_extra/star.png'%}" style="width: 96px; height: 32px;"></h1>
+
+          <div class="row">
+            <div class="mx-auto">        
+              <div class="card" style="background-color: transparent;">
+                <div class="card-img-overlay ovl">
+                    <h3 class="titulo">Dead Cells</h3>
+                    <h5 style="color: aliceblue; font-size: 20px;">
+                      SO: Windows 7+
+                      <br>
+                      <br>
+                      CPU: Intel I5+
+                      <br>
+                      <br>
+                      RAM: 2 GB
+                      <br>
+                      <br>
+                      GRAFICOS: Nvidia 450 GTS
+                      <br>
+                      <br>
+                      Almacenamiento: 500 MB
+                    </h5>
+                </div>
+                <img class="card-img-top" style="height: 400px; width: 328px; border-radius: 30px;" src="{%static 'core/img/software/cat/juegos/deadcells-game.jpg'%}">
+              </div>        
+              <a href="deadcells.html" class="btn btn-primary btn-xl card-text" 
+              style="background-color: black; border-color: rgb(118, 193, 255); 
+              padding-right: 118px; padding-left: 118px; max-width: 100%; max-height: 100%; font-size: 15px;">
+                DESCARGAR
+              </a>  
+            </div>
+
+            <div class="mx-auto">        
+              <div class="card" style="background-color: transparent;">
+                <div class="card-img-overlay ovl">
+                    <h3 class="titulo">Hyper Light Drifter</h3>
+                    <h5 style="color: aliceblue; font-size: 20px;">
+                      SO: Windows 7+
+                      <br>
+                      <br>
+                      CPU: 1.2 GHz
+                      <br>
+                      <br>
+                      RAM: 4 GB
+                      <br>
+                      <br>
+                      GRAFICOS: 512 MB de memoria de video
+                      <br>
+                      <br>
+                      Almacenamiento: 2 GB
+                    </h5>
+                </div>
+                <img class="card-img-top" style="height: 400px; width: 328px; border-radius: 30px;" src="{%static 'core/img/software/cat/juegos/hyperlight-game.jpg'%}">
+              </div>          
+              <a href="hyperlight.html" class="btn btn-primary btn-xl card-text" 
+                style="background-color: black; border-color: rgb(118, 193, 255); 
+                padding-right: 118px; padding-left: 118px; max-width: 100%; max-height: 100%; font-size: 15px;">
+                  DESCARGAR
+              </a> 
+            </div>
+          </div>
+
+        </div>
+
+        <!--Todo en la biblioteca-->
+        <div class="boxed-sm"> 
+          <h1 class="titulo" style="font-size: 30px; text-align: left; margin: 20px; letter-spacing: 6px;">TODOS LOS VIDEOJUEGOS</h1>
+          
+          <div class="row">
+            <div class="mx-auto">        
+              <div class="card w-100" style="background-color: transparent;">
+                <div class="card-img-overlay ovl">
+                    <h3 class="titulo">Dead Cells</h3>
+                    <h5 style="color: aliceblue; font-size: 12px;">
+                      SO: Windows 7+
+                      <br>
+                      <br>
+                      CPU: Intel I5+
+                      <br>
+                      <br>
+                      RAM: 2 GB
+                      <br>
+                      <br>
+                      GRAFICOS: Nvidia 450 GTS
+                      <br>
+                      <br>
+                      Almacenamiento: 500 MB
+                    </h5>
+                </div>
+                <img class="card-img-top" style="height: 266px; width: 218px; border-radius: 15px;" src="{%static 'core/img/software/cat/juegos/deadcells-game.jpg'%}">
+              </div>    
+              <!--BOTON DE DESCARGA-->
+              <a href="deadcells.html" class="btn btn-primary btn-md card-text" 
+                 style="background-color: black; border-color: rgb(118, 193, 255); padding-left: 93px; padding-right: 93px;">
+                  <img class="icon-size" src="{%static 'core/img/icon_extra/download-icon.png'%}">
+              </a>       
+            </div>
+            <div class="mx-auto">
+              <div class="card w-100" style="background-color: transparent;">
+                <div class="card-img-overlay ovl">
+                    <h3 class="titulo" style="font-size: 20px;">Hyper Light Drifter</h3>
+                    <h5 style="color: aliceblue; font-size: 12px;">
+                      SO: Windows 7+
+                      <br>
+                      <br>
+                      CPU: 1.2 GHz
+                      <br>
+                      <br>
+                      RAM: 4 GB
+                      <br>
+                      <br>
+                      GRAFICOS: 512 MB de memoria de video
+                      <br>
+                      <br>
+                      Almacenamiento: 2 GB
+                    </h5>
+                </div>
+                <img class="card-img-top" style="height: 266px; width: 218px; border-radius: 15px;" src="{%static 'core/img/software/cat/juegos/hyperlight-game.jpg'%}">
+              </div>    
+              <a href="hyperlight.html" class="btn btn-primary btn-md card-text" 
+                 style="background-color: black; border-color: rgb(118, 193, 255); padding-left: 93px; padding-right: 93px;">
+                  <img class="icon-size" src="{%static 'core/img/icon_extra/download-icon.png'%}">
+              </a>      
+            </div>
+            
+          </div>
+
+          <br><br><br>
+        </div>
+
+      </div>
+
+      <br><br>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  
+  </body>
+</html>
+
+{% endblock %}

@@ -1,3 +1,8 @@
+{% extends "../mi-plantilla.html" %}
+
+{% block content %}
+
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -12,52 +17,7 @@
       
     </head>
     <body>
-      <nav class="navbar sticky-top navbar-expand-lg navbar-dark rounded border-bottom border-primary">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#opciones">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        
-        <!-- logo -->
-        <a class="navbar-brand" href="index.html">
-          <img src="img/PageLogo/Main page icon.png" width="85" height="85" alt="Volver a inicio">
-        </a>
-    
-        <!-- enlaces -->
-        <div class="collapse navbar-collapse" id="opciones">   
-          <div class="navbar-header">
-            <a class="navbar-brand" href="index.html" style="font-size: 40px; letter-spacing: 10px;">DOWNWARE</a>
-          </div>
-          <ul class="navbar-nav" style="letter-spacing: 2px;">
-            <li class="nav-item">
-              <a class="nav-link"; href="index.html">Inicio | </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="software.html">Programas | </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="videojuegos.html">Videojuegos | </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="nosotros.html">¿Quienes somos? |</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="crear_cuenta.html" style="font-size: 18px;">Crear cuenta || </a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="iniciar_sesion.html" style="font-size: 18px; ">Iniciar sesión || </a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="donaciones.html" style="font-size: 18px; ">Donaciones || </a>
-            </li>
-
-          </ul>
-        </div>
-      </nav>
-      <br><br>
-    
+      {%load static%}
       <!--CONTENIDO-->
       <div class="container rounded container-xl boxed" style="background-color:rgb(15, 4, 0)">
         <div class="titulo boxed-sm"> 
@@ -92,8 +52,15 @@
               </div>
 
               <div class="row">
-                <input type="submit" class="btn btn-danger" id="enviar" value="Enviar">
-                <input type="reset" class="btn btn-primary" id="limpiar" value="Limpiar">
+                <input type="submit" class="btn btn-danger" id="Ingresar" value="Ingresar" 
+                style="background-color: rgb(150, 87, 250); width: 25%;">
+
+                <input type="reset" class="btn btn-danger" id="limpiar" value="Limpiar" 
+                style="background-color: rgb(135, 103, 143); width: 25%;">
+
+                <a href="{%url 'verTodo'%}" class="btn btn-danger" id="Modificar" value="Modificar" style="width: 25%;">
+                  Modificar Software
+                </a>
               </div>
 
             </form>
@@ -103,61 +70,9 @@
       </div>
       <!--CONTENIDO-->
 
-      <footer>
-
-        <div class="container-footer-all">
-    
-          <div class="container-body">
-    
-              <div class="columna1">
-    
-                  <h1 style="color: rgb(143, 96, 182); font-size: 3vw;">Más información de la página</h1>
-    
-                  <p style="color: rgb(165, 165, 165); font-family: Helvetica; font-size: 15px;">
-                    Somos una página encargada de distribuir software de manera ilegal, otorgando todas las herramientas para que los usuarios puedan utilizarlos sin pagar ni un peso.
-                    Todo el software que encontrarás en esta página está completamente libre de virus.
-                  </p>
-    
-              </div>
-    
-              <div class="columna2">
-    
-                  <h1 style="max-height: 100%; max-width: 100%; font-size: 3vw;">Redes Sociales</h1>
-    
-                  <div class="row">
-                    <a href="#"><img src="img/social_icon/facebook_icon.png" style="width: 32px; height: 32px;"></a>
-                    <label>Siguenos en facebook</label>
-                  </div>
-                  <div class="row" >
-                    <a href="#"><img src="img/social_icon/instagram_icon.png" style="width: 32px; height: 32px;"></a>
-                    <label>Siguenos en Instagram</label>
-                  </div>
-                  <div class="row">
-                    <a href="#"><img src="img/social_icon/twitter_icon.png" style="width: 32px; height: 32px;"></a>
-                    <label>Siguenos en Twitter</label>
-                  </div>
-                  
-    
-              </div>
-    
-          </div>
-          
-          <div class="container-footer">
-    
-              <div class="copyright" style="margin-left: 40px;">
-                Javier Puebla Toledo | @Copyrigth Derechos reservados
-              </div>
-    
-          </div>
-    
-        </div>
-    
-      </footer>
-    
-      
-
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  
   </body>
 </html>
+{% endblock %}

@@ -1,0 +1,66 @@
+{% extends "../mi-plantilla.html" %}
+
+{% block content %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Biblioteca de software</title> 
+        <meta charset="utf-8">
+
+        {% load static %}
+        <link href="{%static 'core/css/bootstrap.min.css'%}" type="text/css" rel="stylesheet">
+        <link href="{%static 'core/css/estilos.css'%}" type="text/css" rel="stylesheet"> 
+        <link rel="icon" href="{%static 'core/img/PageLogo/favicon.png'%}">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        
+      
+      </head>
+    <body>
+        {% load static %}
+      <!--CONTENIDO-->
+      <div class="container rounded container-xl boxed" style="background-color:rgb(15, 4, 0)">
+        <div class="titulo boxed-sm"> 
+          <h1 style="font-size: 45px; text-align: left; margin: 20px; text-align: center;"><!--Título del programa--></h1>
+
+
+        </div>
+
+        <br>
+          <div class="row, col-md" style="color: aliceblue;">
+    
+            <table border="1">
+    
+              <tr>
+    
+                <td>ID</td>
+                <td>Nombre</td>
+                <td>Descripción</td>
+    
+              </tr>
+    
+              <!--
+              {%for ve in datos%}
+              <tr>
+    
+                <td>{{ve.idSoftware}}</td>
+                <td>{{ve.nomSoftware}}</td>
+                <td>{{ve.descSoftware}}</td>
+    
+              </tr>
+              {%endfor%}
+
+            -->
+            </table>
+    
+          </div>
+          <br>
+      </div>
+      <!--CONTENIDO-->
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  
+  </body>
+</html>
+{% endblock %}
